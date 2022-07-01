@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Nunito+Sans:wght@200;600&family=Radio+Canada:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: rgb(236, 115, 115);
+    color: white;
+    height: 50px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+nav ul{
+    list-style-type: none;
+}
+
+.gamecontainer{
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content:center ;
+}
+
+.box:hover{
+    background-color: rgb(211, 187, 235);
+}
+.gameinfo{
+    font-size: 15px;
+}
+.gameinfo{
+    padding: 0 30px;
+    font-family: 'Baloo Bhai 1', cursive;
+}
+
+.imgbox img{
+     width: 0;
+     transition: width 1s ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left:0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+   margin: 0 20px;
+   padding: 3px 20px;
+   background-color: rgb(240, 123, 123);
+   border-radius: 5px;
+}
+
+@media screen and (max-width: 800px){
+     .gamecontainer{
+         flex-wrap: wrap;
+     }
+     .gameinfo{
+         margin-top: 34px;
+     }
+}
+    
+
